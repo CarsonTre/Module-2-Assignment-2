@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport configuration for responsive design -->
+    <title>Document</title> <!-- Sets the title of the web page, which appears in the browser's title bar -->
+</head>
+
+<body>
+    <form action="/calculate" method="POST"> <!-- Creates a form with an action to '/calculate' and using the HTTP POST method when submitted -->
+        <input type="number" name="num1" placeholder="Enter first number" required>
+        <!-- Input field for entering the first number.  -->
+
+        <input type="number" name="num2" placeholder="Enter second number" required>
+        <!-- Input field for entering the second number.  -->
+
+        <button type="submit">Calculate</button>
+        <!-- A submit button that, when clicked, will submit the form data to the server for processing. -->
+    </form>
+</body>
+
+</html>

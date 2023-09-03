@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport configuration for responsive design -->
+    <title>Document</title> <!-- Sets the title of the web page-->
+</head>
+
+<body>
+    <form action="/calculate" method="post">
+        <!-- Creates a form with an action to '/calculate' and using the HTTP POST method when submitted -->
+        <input type="number" name="num1" placeholder="Enter first number" required>
+        <!-- Input field for entering the first number.  -->
+
+        <input type="number" name="num2" placeholder="Enter second number" required>
+        <!-- Input field for entering the second number. -->
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <p>
+        <h1>Calculation Results:</h1>
+        <!-- Heading displaying "Calculation Results" with an <h1> tag for semantic structure. -->
+        <p>Sum: <%= sum %></p>
+        <!-- Displays the calculated sum using server-side rendering. The value is inserted into the HTML using the <%= %> syntax, indicating that it's a server-side variable. -->
+        <p>Difference: <%= difference %></p>
+        <!-- Displays the calculated difference using server-side rendering. -->
+        <p>Product: <%= product %></p>
+        <!-- Displays the calculated product using server-side rendering. -->
+        <p>Quotient: <%= quotient %></p>
+        <!-- Displays the calculated quotient using server-side rendering. -->
+    </p>
+</body>
+
+</html>
